@@ -1,16 +1,74 @@
-# noteapp
+note_app_sqlite
+Deskripsi Project
+note_app_sqlite adalah aplikasi catatan sederhana berbasis Flutter yang terinspirasi dari Google Keep.
+Aplikasi ini memungkinkan pengguna untuk:
 
-A new Flutter project.
+Menambahkan catatan
+Menyimpan data secara lokal menggunakan SQLite
+Mengedit catatan
+Menghapus catatan
+Menggunakan mode terang dan gelap (Light/Dark Mode)
+Aplikasi dibuat menggunakan Flutter dan database lokal SQLite melalui package sqflite.
 
-## Getting Started
+Tampilan Aplikasi
+Halaman Home (Light Mode)
+Pada halaman utama:
 
-This project is a starting point for a Flutter application.
+Menampilkan daftar catatan
+Tombol tambah catatan (FloatingActionButton)
+Tombol ganti tema
+Card catatan seperti Google Keep
+Halaman Home (Dark Mode)
+Fitur:
 
-A few resources to get you started if this is your first Flutter project:
+Background hitam
+Card biru
+Tema otomatis berubah sesuai tombol mode
+Halaman Tambah Catatan
+Halaman ini digunakan untuk:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Menulis judul catatan
+Menulis isi catatan
+Menyimpan data ke SQLite
+Tujuan Project
+Tujuan dibuatnya aplikasi ini adalah:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mempelajari Flutter Layout
+Memahami Stateful Widget
+Belajar navigasi antar halaman
+Memahami database lokal SQLite
+Belajar CRUD (Create, Read, Update, Delete)
+Menggunakan package Flutter
+Teknologi yang Digunakan
+Teknologi	Fungsi
+Flutter	Framework aplikasi
+Dart	Bahasa pemrograman
+SQLite	Database lokal
+sqflite	Package SQLite Flutter
+path	Mengatur lokasi database
+path_provider	Mengambil folder penyimpanan
+Material Design	Desain UI aplikasi
+
+lib/
+│
+├── models/
+│   └── note_model.dart
+│
+├── pages/
+│   ├── note_page.dart
+│   └── home_page.dart
+│
+├── services/
+│   └── database_helper.dart
+│
+├── theme/
+│   └── app_theme.dart
+│
+├── widgets/
+│   ├── confirm_dialog.dart
+│   └── note_card.dart
+│
+└── main.dart
+<img width="382" height="478" alt="Screenshot 2026-05-13 103520" src="https://github.com/user-attachments/assets/dbba213f-f4b8-4139-91fa-0ff2d93b9928" />
+<img width="381" height="476" alt="Screenshot 2026-05-13 103454" src="https://github.com/user-attachments/assets/db3c33b3-2673-4f0e-98bb-c3bdb7abbb79" />
+<img width="384" height="474" alt="Screenshot 2026-05-13 103439" src="https://github.com/user-attachments/assets/bff9e1f4-c1ff-4a74-b72d-28c13f99c280" />
